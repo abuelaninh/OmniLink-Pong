@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Master AI</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #gameCanvas {
+            border: 2px solid #fff;
+            background: #000;
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Info text describing who controls each paddle -->
+    <div id="info">Pong Demo – the right paddle is AI‑controlled; the left paddle awaits your agent’s commands.</div>
+    <canvas id="gameCanvas" width="640" height="480"></canvas>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Game settings
+        const width = canvas.width;
+        const height = canvas.height;
+        const paddleWidth = 10;
+        const paddleHeight = 80;
+        const ballRadius = 8;
+
+        // Paddles
+        const leftPaddle = { x: 10, y: height / 2 - paddleHeight / 2, vy: 0 };
+        const rightPaddle = { x: width - paddleWidth - 10, y: height / 2 - paddleHeight / 2, vy: 0 };
+
+        // Ball
+        const ball = {
+            x: width / 2,
+            y: height / 2,
+            vx: Math.random() > 0.5 ? 3 : -3,
+            vy: (Math.random() * 2 - 1) * 2
+        };
+
+        let leftScore = 0;
+        let rightScore = 0;
+        let isPaused = false;
+
+        // Establish WebSocket connection to relay server as game client
+        let gameWs;
+        try {
+            gameWs = new WebSocket('ws://localhost:6789/game');
+            gameWs.onopen = () => {
+                console.log('Connected to game WS server');
+            };
+            gameWs.onerror = (err) => {
+                console.error('Game WS error', err);
+            };
+            gameWs.onclose = () => {
+                console.log('Game WS connection closed');
+            };
+            gameWs.onmessage = (event) => {
+                try {
+                    const msg = JSON.parse(event.data);
+                    if (msg.type === 'action') {
+                        // Move paddle up/down based on agent command
+                        if (msg.move && !isPaused) {
+                            moveAgentPaddle(msg.move);
+                        }
+                    } else if (msg.type === 'ai' && msg.start) {
+                        startAgentAI();
+                    } else if (msg.type === 'admin') {
+                        console.log(`[DEBUG] Received Admin Command: ${msg.command}`);
+                        if (msg.command === 'reset_score') {
+                            console.log("[DEBUG] Executing reset_score...");
+                            leftScore = 0;
+                            rightScore = 0;
+                        } else if (msg.command === 'reset_game') {
+                            console.log("[DEBUG] Executing reset_game...");
+                            leftScore = 0;
+                            rightScore = 0;
+                            resetBall(1);
+                            leftPaddle.y = height / 2 - paddleHeight / 2;
+                            rightPaddle.y = height / 2 - paddleHeight / 2;
+                        } else if (msg.command === 'pause_game') {
+                            console.log("[DEBUG] Pausing game...");
+                            isPaused = true;
+                        } else if (msg.command === 'resume_game') {
+                            console.log("[DEBUG] Resuming game...");
+                            isPaused = false;
+                        }
+                    }
+                } catch (e) {
+                    console.error('Error parsing message from agent', e);
+                }
+            };
+        } catch (e) {
+            console.error('Failed to create WebSocket:', e);
+        }
+
+        // Send current game state to the agent over WebSocket
+        function sendGameState() {
+            if (!gameWs || gameWs.readyState !== WebSocket.OPEN) return;
+            const state = {
+                type: 'state',
+                ball: { x: ball.x, y: ball.y, vx: ball.vx, vy: ball.vy },
+                leftPaddleY: leftPaddle.y,
+                rightPaddleY: rightPaddle.y,
+                score: { left: leftScore, right: rightScore }
+            };
+            try {
+                gameWs.send(JSON.stringify(state));
+            } catch (e) {
+                console.error('Failed to send state', e);
+            }
+        }
+
+        function resetBall(direction) {
+            ball.x = width / 2;
+            ball.y = height / 2;
+            ball.vx = direction * 3;
+            ball.vy = (Math.random() * 2 - 1) * 2;
+        }
+
+        function draw() {
+            // Clear
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, width, height);
+
+            // Draw net
+            ctx.fillStyle = '#444';
+            for (let i = 0; i < height; i += 20) {
+                ctx.fillRect(width / 2 - 1, i, 2, 10);
+            }
+
+            // Draw paddles
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(leftPaddle.x, leftPaddle.y, paddleWidth, paddleHeight);
+            ctx.fillRect(rightPaddle.x, rightPaddle.y, paddleWidth, paddleHeight);
+
+            // Draw ball
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, ballRadius, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Draw scores
+            ctx.font = '20px Arial';
+            ctx.fillText(leftScore, width / 4, 30);
+            ctx.fillText(rightScore, (width * 3) / 4, 30);
+        }
+
+        // --- Paddle control ---
+        // The left paddle is controlled by the agent.  When agentAuto is false the paddle
+        // remains stationary until moveAgentPaddle() or startAgentAI() are invoked from
+        // external code (e.g. through the Omni Link tool panel).  When agentAuto is true,
+        // the paddle behaves like a flawless AI and mirrors the ball's vertical position.
+
+        let agentAuto = false;
+
+        /**
+         * Manually move the agent paddle.
+         * @param {string} direction "up" to move up, "down" to move down
+         */
+        function moveAgentPaddle(direction) {
+            const speed = 6;
+            if (direction === 'up') {
+                leftPaddle.y -= speed;
+            } else if (direction === 'down') {
+                leftPaddle.y += speed;
+            }
+            // Boundaries
+            if (leftPaddle.y < 0) leftPaddle.y = 0;
+            if (leftPaddle.y + paddleHeight > height) leftPaddle.y = height - paddleHeight;
+        }
+
+        /**
+         * Enable automated control for the agent paddle.  Once called, the left paddle will
+         * track the ball's vertical position just like the right paddle.  This can be invoked
+         * from outside the HTML file via a tool call to demonstrate the agent taking control.
+         */
+        function startAgentAI() {
+            agentAuto = true;
+        }
+
+        // AI Mistake state (for the right paddle only)
+        let aiMistakeTimer = 0;
+        let aiMistakeOffset = 0;
+
+        // AI update for paddles.  Only the right paddle uses this function by default.
+        function updateAIPaddle(paddle) {
+            // Introduce occasional mistakes
+            if (aiMistakeTimer <= 0) {
+                // 1% chance per frame to make a mistake
+                if (Math.random() < 0.01) {
+                    aiMistakeTimer = Math.floor(Math.random() * 30) + 30; // Mistake lasts 30-60 frames
+                    // Target 80px above or below the ball
+                    aiMistakeOffset = (Math.random() > 0.5 ? 80 : -80);
+                }
+            } else {
+                aiMistakeTimer--;
+                if (aiMistakeTimer <= 0) {
+                    aiMistakeOffset = 0; // Recover from mistake
+                }
+            }
+
+            const targetY = ball.y - paddleHeight / 2 + aiMistakeOffset;
+            const speed = 3.5; // Reduced from 6 for easier difficulty
+            if (paddle.y + paddleHeight / 2 < targetY - 4) {
+                paddle.y += Math.min(speed, targetY - paddle.y);
+            } else if (paddle.y + paddleHeight / 2 > targetY + 4) {
+                paddle.y -= Math.min(speed, paddle.y - targetY);
+            }
+            if (paddle.y < 0) paddle.y = 0;
+            if (paddle.y + paddleHeight > height) paddle.y = height - paddleHeight;
+        }
+
+        // Update agent paddle each frame.  If agentAuto is true, mimic perfect AI; otherwise
+        // do nothing unless moved via moveAgentPaddle().
+        function updateAgentPaddle() {
+            if (agentAuto) {
+                updateAIPaddle(leftPaddle);
+            }
+        }
+
+        function update() {
+            if (isPaused) return;
+
+            // Move ball
+            ball.x += ball.vx;
+            ball.y += ball.vy;
+
+            // Top and bottom collision
+            if (ball.y - ballRadius < 0 || ball.y + ballRadius > height) {
+                ball.vy = -ball.vy;
+            }
+
+            // Paddle collisions
+            // Left paddle
+            if (
+                ball.x - ballRadius < leftPaddle.x + paddleWidth &&
+                ball.y > leftPaddle.y &&
+                ball.y < leftPaddle.y + paddleHeight
+            ) {
+                ball.vx = -ball.vx;
+                // add spin
+                const deltaY = ball.y - (leftPaddle.y + paddleHeight / 2);
+                ball.vy = deltaY * 0.1;
+            }
+            // Right paddle
+            if (
+                ball.x + ballRadius > rightPaddle.x &&
+                ball.y > rightPaddle.y &&
+                ball.y < rightPaddle.y + paddleHeight
+            ) {
+                ball.vx = -ball.vx;
+                const deltaY = ball.y - (rightPaddle.y + paddleHeight / 2);
+                ball.vy = deltaY * 0.1;
+            }
+
+            // Score detection
+            if (ball.x < 0) {
+                rightScore++;
+                resetBall(-1);
+            } else if (ball.x > width) {
+                leftScore++;
+                resetBall(1);
+            }
+
+            // Update paddles
+            // Left paddle: controlled by the agent (manual or automated)
+            updateAgentPaddle();
+            // Right paddle: always AI controlled
+            updateAIPaddle(rightPaddle);
+
+            // After updating positions and scores, send state to agent
+            sendGameState();
+        }
+
+        function gameLoop() {
+            if (!isPaused) {
+                update();
+            }
+            draw();
+            if (isPaused) {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                ctx.fillRect(0, 0, width, height);
+                ctx.fillStyle = '#fff';
+                ctx.font = 'bold 48px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('PAUSED', width / 2, height / 2);
+                ctx.font = '20px Arial';
+                ctx.fillText('Waiting for resume_game command...', width / 2, height / 2 + 40);
+                ctx.textAlign = 'start'; // Reset alignment
+                ctx.textBaseline = 'alphabetic';
+            }
+            // Draw Connection Status if disconnected
+            if (gameWs.readyState !== WebSocket.OPEN) {
+                ctx.fillStyle = 'red';
+                ctx.font = '16px Arial';
+                ctx.fillText('DISCONNECTED', 10, height - 10);
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+        // Start
+        draw();
+        requestAnimationFrame(gameLoop);
+    </script>
+</body>
+
+</html>

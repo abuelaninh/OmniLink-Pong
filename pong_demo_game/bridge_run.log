@@ -1,0 +1,341 @@
+2026-02-26 05:19:12,111 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 05:19:12,214 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 05:19:12,214 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 05:19:12,215 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 05:19:12,233 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 05:19:12,233 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 05:19:12,235 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 05:19:22,234 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 410, "y": 153.0080750316905, "vx": -3, "vy": 3.978719688281055}, "leftPaddleY": 200, "rightPaddleY": 113.00807503169051, "score": {"left": 0, "right": 0}}
+2026-02-26 05:19:32,235 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 35, "y": 75.45720653312259, "vx": -3, "vy": -1.7320294049144933}, "leftPaddleY": 200, "rightPaddleY": 35.45720653312259, "score": {"left": 0, "right": 7}}
+2026-02-26 05:19:42,236 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 326, "y": 371.3250640494023, "vx": -3, "vy": -1.2717580731592308}, "leftPaddleY": 200, "rightPaddleY": 331.3250640494023, "score": {"left": 0, "right": 16}}
+2026-02-26 05:19:52,238 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 80, "y": 302.76633737899374, "vx": -3, "vy": 0.7845792172374337}, "leftPaddleY": 200, "rightPaddleY": 182.76633737899374, "score": {"left": 1, "right": 26}}
+2026-02-26 05:20:02,239 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 155, "y": 105.90397095584272, "vx": 3, "vy": -2.5301137555501443}, "leftPaddleY": 200, "rightPaddleY": 65.90397095584272, "score": {"left": 2, "right": 36}}
+2026-02-26 05:20:04,543 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 05:20:05,242 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 05:20:34,019 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 05:20:34,121 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 05:20:34,122 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 05:20:34,122 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 05:20:34,133 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 05:20:34,133 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 05:20:34,136 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 05:20:44,136 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 125, "y": 308.3786260540347, "vx": -3, "vy": 1.051978862369761}, "leftPaddleY": 200, "rightPaddleY": 268.3786260540347, "score": {"left": 0, "right": 6}}
+2026-02-26 05:20:48,461 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 05:20:49,140 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 05:25:35,148 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 05:25:35,250 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 05:25:35,250 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 05:25:35,257 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 05:25:35,268 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 05:25:35,268 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 05:25:35,270 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 05:25:45,268 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 20, "y": 292.0837439635159, "vx": -3, "vy": 0.5208374396351454}, "leftPaddleY": 200, "rightPaddleY": 252.08374396351587, "score": {"left": 0, "right": 6}}
+2026-02-26 05:25:55,269 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 311, "y": 106.42071653976703, "vx": -3, "vy": 3.4304720909871325}, "leftPaddleY": 200, "rightPaddleY": 66.42071653976703, "score": {"left": 2, "right": 13}}
+2026-02-26 05:25:57,701 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 05:25:58,272 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 07:53:10,457 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 07:53:10,559 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 07:53:10,559 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 07:53:10,559 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 07:53:10,570 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 07:53:10,571 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 07:53:10,573 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 07:53:20,571 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 248, "y": 201.29874189057227, "vx": -3, "vy": -1.6125524212261544}, "leftPaddleY": 206, "rightPaddleY": 81.29874189057227, "score": {"left": 0, "right": 9}}
+2026-02-26 07:53:30,572 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 5, "y": 175.12891124629064, "vx": -3, "vy": -0.6178198928924572}, "leftPaddleY": 200, "rightPaddleY": 55.12891124629064, "score": {"left": 0, "right": 20}}
+2026-02-26 07:53:40,573 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 605, "y": 340.8275609099752, "vx": 3, "vy": 1.0613427464208027}, "leftPaddleY": 200, "rightPaddleY": 256.9780204887178, "score": {"left": 2, "right": 27}}
+2026-02-26 07:53:41,846 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 07:53:42,575 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 07:57:17,149 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 07:57:17,251 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 07:57:17,251 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 07:57:17,252 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 07:57:17,263 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 07:57:17,263 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 07:57:17,265 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 07:57:27,264 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 26, "y": 267.5982100312112, "vx": 3, "vy": 3.359821003121118}, "leftPaddleY": 194, "rightPaddleY": 186.42238847354287, "score": {"left": 1, "right": 5}}
+2026-02-26 07:57:37,267 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:57:47,268 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:57:57,269 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:07,279 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:17,268 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 07:58:17,281 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:27,291 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:37,293 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:47,303 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:58:57,305 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:07,315 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:17,272 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 07:59:17,316 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:27,327 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:37,328 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:47,339 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 07:59:57,340 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:07,350 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:17,277 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 08:00:17,352 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:27,362 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:37,364 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:47,374 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:00:57,376 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:01:07,386 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:01:17,282 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 08:01:17,388 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:01:27,398 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:01:37,400 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 146, "y": 315.1104294160225, "vx": -3, "vy": 1.2950074037245276}, "leftPaddleY": 200, "rightPaddleY": 275.1104294160225, "score": {"left": 1, "right": 6}}
+2026-02-26 08:01:43,547 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 08:01:44,407 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 08:01:53,230 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 08:01:53,332 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 08:01:53,332 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 08:01:53,333 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 08:01:53,344 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 08:01:53,344 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 08:01:53,346 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 08:02:03,344 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 446, "y": 417.404621398177, "vx": 3, "vy": 3.0810743223980666}, "leftPaddleY": 344, "rightPaddleY": 377.404621398177, "score": {"left": 0, "right": 3}}
+2026-02-26 08:02:13,345 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 536, "y": 406.8656459483762, "vx": -3, "vy": -0.3047901909120924}, "leftPaddleY": 396, "rightPaddleY": 366.8656459483762, "score": {"left": 0, "right": 3}}
+2026-02-26 08:02:23,347 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 287, "y": 133.83834990729605, "vx": -3, "vy": 0.31978914792636887}, "leftPaddleY": 60, "rightPaddleY": 52.5, "score": {"left": 0, "right": 3}}
+2026-02-26 08:02:33,347 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 476, "y": 333.74958739238025, "vx": -3, "vy": 0.09137386685417255}, "leftPaddleY": 264, "rightPaddleY": 293.74958739238025, "score": {"left": 4, "right": 4}}
+2026-02-26 08:02:43,349 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 551, "y": 43.46924838548682, "vx": -3, "vy": 0.11191123824150893}, "leftPaddleY": 4, "rightPaddleY": 3.4692483854868215, "score": {"left": 5, "right": 4}}
+2026-02-26 08:02:53,344 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 08:02:53,350 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 548, "y": 259.59641247161244, "vx": 3, "vy": -3.1216611406872348}, "leftPaddleY": 256, "rightPaddleY": 299.59641247161244, "score": {"left": 5, "right": 5}}
+2026-02-26 08:02:59,486 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 08:03:00,356 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 08:04:37,657 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 08:04:37,759 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 08:04:37,759 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 08:04:37,760 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 08:04:37,769 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 08:04:37,769 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 08:04:37,771 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 08:04:47,770 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 101, "y": 150.90379169543505, "vx": 3, "vy": -2.545605951559003}, "leftPaddleY": 200, "rightPaddleY": 110.90379169543505, "score": {"left": 1, "right": 6}}
+2026-02-26 08:04:57,772 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 164, "y": 417.480149631904, "vx": -3, "vy": 0.15706207932026928}, "leftPaddleY": 348, "rightPaddleY": 377.480149631904, "score": {"left": 3, "right": 9}}
+2026-02-26 08:05:07,773 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 239, "y": 286.5995965414789, "vx": -3, "vy": 2.372273233083955}, "leftPaddleY": 240, "rightPaddleY": 284.2413884211137, "score": {"left": 4, "right": 9}}
+2026-02-26 08:05:12,830 - [BRIDGE] - INFO - Received MQTT Command: '{"command":"resume","response":"Command: resume\nResponse: The current score is 4 to 9. We are still trailing by five points, but the second tool is now active and the game is back in motion. I am keeping a close watch on the ball's trajectory.","timestamp":"2026-02-26T05:05:12.821Z"}'
+2026-02-26 08:05:12,830 - [BRIDGE] - INFO - Extracted command from JSON: 'resume'
+2026-02-26 08:05:17,775 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 593, "y": 115.36589076055628, "vx": 3, "vy": -1.3696055960378404}, "leftPaddleY": 84, "rightPaddleY": 75.36589076055628, "score": {"left": 6, "right": 9}}
+2026-02-26 08:05:27,776 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 386, "y": 403.86439500944687, "vx": -3, "vy": -0.06850274312115516}, "leftPaddleY": 370, "rightPaddleY": 363.86439500944687, "score": {"left": 6, "right": 9}}
+2026-02-26 08:05:37,770 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 08:05:37,777 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 140, "y": 433.5526852787666, "vx": -3, "vy": 0.20735125673275548}, "leftPaddleY": 384, "rightPaddleY": 393.5526852787666, "score": {"left": 6, "right": 9}}
+2026-02-26 08:05:47,778 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 560, "y": 38.6480235819375, "vx": -3, "vy": 3.95797274233001}, "leftPaddleY": 0, "rightPaddleY": 0, "score": {"left": 8, "right": 9}}
+2026-02-26 08:05:57,780 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 101, "y": 342.4057694963739, "vx": -3, "vy": -0.10149314351548924}, "leftPaddleY": 310, "rightPaddleY": 259.02965979262166, "score": {"left": 11, "right": 9}}
+2026-02-26 08:06:07,782 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 566, "y": 24.651365759382298, "vx": -3, "vy": 3.4886892756206693}, "leftPaddleY": 0, "rightPaddleY": 64.6513657593823, "score": {"left": 13, "right": 9}}
+2026-02-26 08:06:17,783 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 320, "y": 99.77937753998943, "vx": -3, "vy": 1.149603414230564}, "leftPaddleY": 54, "rightPaddleY": 59.779377539989426, "score": {"left": 13, "right": 9}}
+2026-02-26 08:06:27,785 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 74, "y": 133.89628473611123, "vx": -3, "vy": 0.09965428245370447}, "leftPaddleY": 84, "rightPaddleY": 93.89628473611123, "score": {"left": 13, "right": 9}}
+2026-02-26 08:06:37,771 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 08:06:37,786 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 197, "y": 169.4538140929821, "vx": -3, "vy": 0.10386704471488883}, "leftPaddleY": 120, "rightPaddleY": 129.4538140929821, "score": {"left": 14, "right": 9}}
+2026-02-26 08:06:47,787 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 269, "y": 237.05306366174676, "vx": -3, "vy": -0.08779169486816443}, "leftPaddleY": 202, "rightPaddleY": 197.05306366174676, "score": {"left": 15, "right": 9}}
+2026-02-26 08:06:57,788 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 242, "y": 198.05856998693912, "vx": 3, "vy": -0.90172475625684}, "leftPaddleY": 166, "rightPaddleY": 158.05856998693912, "score": {"left": 18, "right": 9}}
+2026-02-26 08:07:07,129 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 08:07:07,798 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-26 21:55:11,289 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-26 21:55:11,398 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-26 21:55:11,398 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-26 21:55:11,405 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-26 21:55:11,417 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-26 21:55:11,417 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-26 21:55:11,419 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-26 21:55:21,417 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 293, "y": 244.41777765311875, "vx": -3, "vy": 0.4908641836798613}, "leftPaddleY": 200, "rightPaddleY": 132.52400629693915, "score": {"left": 1, "right": 6}}
+2026-02-26 21:55:31,419 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 584, "y": 199.43968947293217, "vx": -3, "vy": -3.7590786984237585}, "leftPaddleY": 200, "rightPaddleY": 241.51231906032228, "score": {"left": 4, "right": 12}}
+2026-02-26 21:55:41,420 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 26, "y": 218.8333281592831, "vx": 3, "vy": -2.1166671840716904}, "leftPaddleY": 200, "rightPaddleY": 178.8333281592831, "score": {"left": 4, "right": 22}}
+2026-02-26 21:55:51,421 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 56, "y": 187.76254930815986, "vx": 3, "vy": -2.6118725345920044}, "leftPaddleY": 200, "rightPaddleY": 147.76254930815986, "score": {"left": 4, "right": 30}}
+2026-02-26 21:56:01,422 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 284, "y": 244.7439083931979, "vx": -3, "vy": 0.395325699433152}, "leftPaddleY": 200, "rightPaddleY": 136.67971872297971, "score": {"left": 4, "right": 39}}
+2026-02-26 21:56:11,417 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 21:56:11,423 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 275, "y": 228.3425573344202, "vx": -3, "vy": -0.7771628443719867}, "leftPaddleY": 200, "rightPaddleY": 268.34255733442023, "score": {"left": 6, "right": 45}}
+2026-02-26 21:56:21,424 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 605, "y": 214.06111122980008, "vx": 3, "vy": -0.12777777719310848}, "leftPaddleY": 200, "rightPaddleY": 94.06111122980008, "score": {"left": 7, "right": 53}}
+2026-02-26 21:56:31,425 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 365, "y": 340.0136665663124, "vx": 3, "vy": 0.813119240376534}, "leftPaddleY": 200, "rightPaddleY": 300.0136665663124, "score": {"left": 9, "right": 56}}
+2026-02-26 21:56:41,426 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 197, "y": 241.87783610794423, "vx": -3, "vy": 0.0016781377193410664}, "leftPaddleY": 200, "rightPaddleY": 201.87783610794423, "score": {"left": 10, "right": 61}}
+2026-02-26 21:56:51,426 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 167, "y": 264.0648837055831, "vx": -3, "vy": 0.4718604648153537}, "leftPaddleY": 200, "rightPaddleY": 144.0648837055831, "score": {"left": 10, "right": 69}}
+2026-02-26 21:57:01,427 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 452, "y": 372.39465344040946, "vx": 3, "vy": -2.2065775573401765}, "leftPaddleY": 200, "rightPaddleY": 332.39465344040946, "score": {"left": 10, "right": 79}}
+2026-02-26 21:57:11,419 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-26 21:57:11,428 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 155, "y": 141.5899365903553, "vx": -3, "vy": -1.7892738801753443}, "leftPaddleY": 200, "rightPaddleY": 142.24323583438854, "score": {"left": 11, "right": 84}}
+2026-02-26 21:57:21,430 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 341, "y": 24.401251161717674, "vx": -3, "vy": -1.3931397566099577}, "leftPaddleY": 20, "rightPaddleY": 0, "score": {"left": 11, "right": 89}}
+2026-02-26 21:57:31,431 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 485, "y": 142.705893098924, "vx": 3, "vy": -1.7689837618377386}, "leftPaddleY": 136, "rightPaddleY": 22.705893098924008, "score": {"left": 13, "right": 89}}
+2026-02-26 21:57:41,432 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 410, "y": 400.85692002321935, "vx": 3, "vy": 3.3839262502418563}, "leftPaddleY": 324, "rightPaddleY": 360.85692002321935, "score": {"left": 14, "right": 89}}
+2026-02-26 21:57:47,291 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-26 21:57:47,439 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-27 15:24:15,278 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-27 15:24:15,387 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-27 15:24:15,388 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-27 15:24:15,388 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-27 15:24:15,407 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-27 15:24:15,407 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-27 15:24:15,409 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-27 15:24:25,408 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 503, "y": 362.4096275519193, "vx": 3, "vy": 3.497417930054837}, "leftPaddleY": 200, "rightPaddleY": 322.4096275519193, "score": {"left": 0, "right": 7}}
+2026-02-27 15:24:35,410 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 578, "y": -2.219432983819715, "vx": 3, "vy": 3.838130271256338}, "leftPaddleY": 0, "rightPaddleY": 0, "score": {"left": 0, "right": 7}}
+2026-02-27 15:24:39,329 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-27 15:24:39,414 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-27 15:25:09,876 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-27 15:25:09,979 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-27 15:25:09,979 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-27 15:25:09,980 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-27 15:25:09,991 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-27 15:25:09,992 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-27 15:25:09,993 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-27 15:25:19,992 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 386, "y": 349.2713623243935, "vx": 3, "vy": -2.731784058109838}, "leftPaddleY": 200, "rightPaddleY": 309.2713623243935, "score": {"left": 0, "right": 6}}
+2026-02-27 15:25:29,993 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 311, "y": 463.1680387937647, "vx": 3, "vy": -3.3653337251895326}, "leftPaddleY": 400, "rightPaddleY": 347.24536899224836, "score": {"left": 0, "right": 7}}
+2026-02-27 15:25:39,994 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 557, "y": 432.5302199995593, "vx": 3, "vy": 0.6873273796767876}, "leftPaddleY": 384, "rightPaddleY": 392.5302199995593, "score": {"left": 0, "right": 7}}
+2026-02-27 15:25:49,995 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 578, "y": 341.59354949393526, "vx": -3, "vy": 3.972341360231542}, "leftPaddleY": 288, "rightPaddleY": 258.7573568483781, "score": {"left": 4, "right": 7}}
+2026-02-27 15:25:59,996 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 131, "y": 300.61362996006096, "vx": -3, "vy": 0.07411689777580364}, "leftPaddleY": 252, "rightPaddleY": 218.99840777358327, "score": {"left": 7, "right": 7}}
+2026-02-27 15:26:09,992 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-27 15:26:09,997 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 383, "y": 254.71621534613354, "vx": 3, "vy": 0.7007721593396923}, "leftPaddleY": 216, "rightPaddleY": 188.32553103282464, "score": {"left": 10, "right": 7}}
+2026-02-27 15:26:12,860 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-27 15:26:13,000 - [BRIDGE] - INFO - Bridge stopped.
+2026-02-27 15:29:05,534 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-02-27 15:29:05,636 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-02-27 15:29:05,637 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-02-27 15:29:05,637 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-02-27 15:29:05,649 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-02-27 15:29:05,649 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-02-27 15:29:05,651 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-02-27 15:29:15,650 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 158, "y": 221.78058897133906, "vx": -3, "vy": -0.33739650053076575}, "leftPaddleY": 200, "rightPaddleY": 261.78058897133906, "score": {"left": 1, "right": 6}}
+2026-02-27 15:29:25,651 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 290, "y": 123.94074869488645, "vx": 3, "vy": 3.3592589751826267}, "leftPaddleY": 48, "rightPaddleY": 83.94074869488645, "score": {"left": 4, "right": 6}}
+2026-02-27 15:29:35,652 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 512, "y": 35.94875253712775, "vx": 3, "vy": -2.7300759963707493}, "leftPaddleY": 28, "rightPaddleY": 72.0991325189815, "score": {"left": 4, "right": 6}}
+2026-02-27 15:29:45,653 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 80, "y": 286.1477126597579, "vx": 3, "vy": -3.3518674050086474}, "leftPaddleY": 286, "rightPaddleY": 246.14771265975787, "score": {"left": 6, "right": 6}}
+2026-02-27 15:29:55,654 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 284, "y": 434.32049151086903, "vx": 3, "vy": 3.1700051199048858}, "leftPaddleY": 360, "rightPaddleY": 400, "score": {"left": 6, "right": 6}}
+2026-02-27 15:30:05,650 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-27 15:30:05,655 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 179, "y": 21.749542921588166, "vx": 3, "vy": 3.4764237184606004}, "leftPaddleY": 0, "rightPaddleY": 61.749542921588166, "score": {"left": 7, "right": 6}}
+2026-02-27 15:30:15,656 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 281, "y": 96.93871593880415, "vx": -3, "vy": 0.33671803622528035}, "leftPaddleY": 24, "rightPaddleY": 14, "score": {"left": 9, "right": 6}}
+2026-02-27 15:30:25,658 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 554, "y": 187.10288834759018, "vx": 3, "vy": -0.6781680981078186}, "leftPaddleY": 178, "rightPaddleY": 141.45922454380582, "score": {"left": 11, "right": 6}}
+2026-02-27 15:30:35,659 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 479, "y": 283.6378589336239, "vx": 3, "vy": -3.200880440316826}, "leftPaddleY": 280, "rightPaddleY": 243.63785893362387, "score": {"left": 12, "right": 6}}
+2026-02-27 15:30:45,660 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 290, "y": 261.3661420620303, "vx": -3, "vy": 0.3508818250771782}, "leftPaddleY": 192, "rightPaddleY": 179.0064419861813, "score": {"left": 15, "right": 6}}
+2026-02-27 15:30:55,661 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 401, "y": 422.78809466933876, "vx": -3, "vy": 3.8326755110220434}, "leftPaddleY": 346, "rightPaddleY": 317.3413782765531, "score": {"left": 16, "right": 6}}
+2026-02-27 15:31:05,651 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-27 15:31:05,662 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 479, "y": 145.17952052732016, "vx": -3, "vy": 0.20059073779673897}, "leftPaddleY": 130, "rightPaddleY": 62.64702994849927, "score": {"left": 17, "right": 6}}
+2026-02-27 15:31:15,663 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 29, "y": 76.88096890535567, "vx": -3, "vy": -3.893044594442199}, "leftPaddleY": 70, "rightPaddleY": 73.43411618847932, "score": {"left": 20, "right": 6}}
+2026-02-27 15:31:25,664 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 536, "y": 479.7514736351723, "vx": 3, "vy": 3.975147363517232}, "leftPaddleY": 394, "rightPaddleY": 360.22662099868955, "score": {"left": 21, "right": 6}}
+2026-02-27 15:31:35,666 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 119, "y": 477.62411737501697, "vx": 3, "vy": 3.7624117375016968}, "leftPaddleY": 400, "rightPaddleY": 399.8978762012668, "score": {"left": 22, "right": 6}}
+2026-02-27 15:31:45,670 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 314, "y": 481.396741492392, "vx": -3, "vy": -3.772624117375017}, "leftPaddleY": 400, "rightPaddleY": 399.896741492392, "score": {"left": 22, "right": 6}}
+2026-02-27 15:31:55,671 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 482, "y": 231.36534798536354, "vx": -3, "vy": -3.6981763089849666}, "leftPaddleY": 202, "rightPaddleY": 278.103342490852, "score": {"left": 23, "right": 6}}
+2026-02-27 15:32:05,653 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-27 15:32:05,672 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 560, "y": 199.8904529270232, "vx": -3, "vy": -3.7237677085679937}, "leftPaddleY": 168, "rightPaddleY": 243.47073626411128, "score": {"left": 24, "right": 6}}
+2026-02-27 15:32:15,673 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 590, "y": 43.043090817528324, "vx": 3, "vy": -0.8836207534468287}, "leftPaddleY": 10, "rightPaddleY": 3.0430908175283236, "score": {"left": 25, "right": 6}}
+2026-02-27 15:32:25,674 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 515, "y": 193.718788743179, "vx": 3, "vy": -0.7120186347203297}, "leftPaddleY": 160, "rightPaddleY": 114.91945514698045, "score": {"left": 26, "right": 6}}
+2026-02-27 15:32:35,674 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 440, "y": 436.9689601259637, "vx": 3, "vy": -0.48448006298175417}, "leftPaddleY": 400, "rightPaddleY": 316.9689601259637, "score": {"left": 27, "right": 6}}
+2026-02-27 15:32:40,580 - [BRIDGE] - INFO - Received MQTT Command: '{"command":"resume","response":"Command: resume\nResponse: The Second Tool is connected and ready. I'm resuming the match now. We're still dominating with a score of 25 to 6, and I'll be watching closely to ensure we keep it that way.","timestamp":"2026-02-27T12:32:39.500Z"}'
+2026-02-27 15:32:40,580 - [BRIDGE] - INFO - Extracted command from JSON: 'resume'
+2026-02-27 15:32:45,264 - [BRIDGE] - INFO - Received MQTT Command: '{"command":"resume","response":"Command: resume\nResponse: We're leading 27 to 6. I've successfully switched to the Second Tool and it's connected. Resuming the game now to keep our momentum going. I'll stay on top of the score for you.","timestamp":"2026-02-27T12:32:44.262Z"}'
+2026-02-27 15:32:45,265 - [BRIDGE] - INFO - Extracted command from JSON: 'resume'
+2026-02-27 15:32:45,675 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 359, "y": 228.0750508490253, "vx": 3, "vy": -0.9173037808442164}, "leftPaddleY": 190, "rightPaddleY": 56, "score": {"left": 28, "right": 6}}
+2026-02-27 15:32:55,676 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 89, "y": 363.2997586506033, "vx": -3, "vy": 0.08559273317700332}, "leftPaddleY": 324, "rightPaddleY": 243.29975865060328, "score": {"left": 30, "right": 6}}
+2026-02-27 15:33:05,654 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-02-27 15:33:05,677 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 164, "y": 445.8723049767007, "vx": -3, "vy": 2.941103659251465}, "leftPaddleY": 396, "rightPaddleY": 400, "score": {"left": 31, "right": 6}}
+2026-02-27 15:33:15,678 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 47, "y": 301.194414901802, "vx": 3, "vy": -0.16503441754106235}, "leftPaddleY": 264, "rightPaddleY": 181.19441490180202, "score": {"left": 31, "right": 6}}
+2026-02-27 15:33:25,679 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 452, "y": 155.31461182764536, "vx": -3, "vy": -3.5929281476975405}, "leftPaddleY": 120, "rightPaddleY": 199.31052217863936, "score": {"left": 33, "right": 6}}
+2026-02-27 15:33:35,680 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 206, "y": 148.08337870496962, "vx": -3, "vy": 0.009145436568746846}, "leftPaddleY": 100, "rightPaddleY": 66.08037969368792, "score": {"left": 33, "right": 6}}
+2026-02-27 15:33:40,996 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-02-27 15:33:41,687 - [BRIDGE] - INFO - Bridge stopped.
+2026-03-01 18:15:25,920 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-03-01 18:15:26,029 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-03-01 18:15:26,029 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-03-01 18:15:26,029 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-03-01 18:15:26,048 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-03-01 18:15:26,049 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-03-01 18:15:26,051 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-03-01 18:15:36,049 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 53, "y": 52.32982797473888, "vx": -3, "vy": -0.2900620896835548}, "leftPaddleY": 200, "rightPaddleY": 12.329827974738883, "score": {"left": 1, "right": 3}}
+2026-03-01 18:15:38,659 - [BRIDGE] - INFO - Received MQTT Command: '{"command":"resume","response":"Command: resume\nResponse: The Second Tool is connected and ready to go. I've resumed the game, and we're still sitting on a massive lead of 33 to 6. I'll keep a sharp eye on things.","timestamp":"2026-03-01T15:15:38.653Z"}'
+2026-03-01 18:15:38,660 - [BRIDGE] - INFO - Extracted command from JSON: 'resume'
+2026-03-01 18:15:46,050 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 131, "y": 360.99048350216526, "vx": -3, "vy": 1.920483865113714}, "leftPaddleY": 200, "rightPaddleY": 281.739838469663, "score": {"left": 1, "right": 15}}
+2026-03-01 18:15:55,222 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-03-01 18:15:56,060 - [BRIDGE] - INFO - Bridge stopped.
+2026-03-01 18:16:26,641 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-03-01 18:16:26,743 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-03-01 18:16:26,743 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-03-01 18:16:26,744 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-03-01 18:16:26,756 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-03-01 18:16:26,756 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-03-01 18:16:26,758 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-03-01 18:16:36,757 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 317, "y": 240.91925799173202, "vx": -3, "vy": 0.9192579917320196}, "leftPaddleY": 200, "rightPaddleY": 250.63743434682038, "score": {"left": 0, "right": 4}}
+2026-03-01 18:16:46,758 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 194, "y": 170.53007141229153, "vx": 3, "vy": 3.3097079827144555}, "leftPaddleY": 96, "rightPaddleY": 130.53007141229153, "score": {"left": 2, "right": 5}}
+2026-03-01 18:16:56,759 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 581, "y": 166.61028948916018, "vx": -3, "vy": -3.2435007325495464}, "leftPaddleY": 138, "rightPaddleY": 152.72380487270053, "score": {"left": 5, "right": 5}}
+2026-03-01 18:17:06,760 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 575, "y": 85.75067869456504, "vx": 3, "vy": -1.8146978977109924}, "leftPaddleY": 54, "rightPaddleY": 45.75067869456504, "score": {"left": 6, "right": 5}}
+2026-03-01 18:17:16,766 - [BRIDGE] - INFO - Published to 'olink/context': {"type": "state", "ball": {"x": 119, "y": 157.85983280578873, "vx": 3, "vy": 0.9721910440436319}, "leftPaddleY": 108, "rightPaddleY": 155.77696714513434, "score": {"left": 6, "right": 5}}
+2026-03-01 18:17:17,615 - [BRIDGE] - INFO - Bridge stopping by user request...
+2026-03-01 18:17:17,766 - [BRIDGE] - INFO - Bridge stopped.
+2026-03-03 06:31:58,844 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-03-03 06:31:58,946 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-03-03 06:31:58,947 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-03-03 06:31:58,947 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-03-03 06:31:58,969 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-03-03 06:31:58,969 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-03-03 06:31:58,970 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:03,976 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:08,974 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:08,978 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:13,983 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:18,980 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:18,985 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:23,991 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:28,985 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:28,993 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:33,999 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:38,992 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:39,001 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:44,006 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:48,997 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:49,009 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:54,014 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:32:58,975 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-03-03 06:32:58,998 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:32:59,016 - [BRIDGE] - WARNING - Pong Relay disconnected ([Errno 111] Connect call failed ('127.0.0.1', 6789)). Retrying in 5 seconds...
+2026-03-03 06:33:04,023 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-03-03 06:33:09,005 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:33:19,014 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:33:29,020 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:33:36,866 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:33:36,866 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:33:39,030 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:33:39,030 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:33:49,035 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:33:58,986 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-03-03 06:33:59,036 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:07,017 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:34:07,017 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:34:09,042 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:34:09,042 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:19,052 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:26,696 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:34:26,697 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:34:29,058 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:34:29,058 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:39,065 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:49,069 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:34:49,166 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:34:49,166 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:34:58,997 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:34:58,997 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-03-03 06:34:59,070 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:09,077 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:19,080 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:29,085 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:39,095 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:49,100 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:35:59,008 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-03-03 06:35:59,102 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:09,106 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:19,117 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:29,122 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:39,132 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:49,138 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:36:59,020 - [BRIDGE] - INFO - Published to 'olink/feedback': {"feedback": "check status"}
+2026-03-03 06:36:59,141 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:09,146 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:17,529 - [BRIDGE] - INFO - Connecting to MQTT Broker at localhost:9001 (websockets)...
+2026-03-03 06:37:17,631 - [BRIDGE] - INFO - Attempting connection to Pong Relay at ws://localhost:6789/agent...
+2026-03-03 06:37:17,631 - [BRIDGE] - INFO - Successfully connected to MQTT Broker at localhost:9001
+2026-03-03 06:37:17,631 - [BRIDGE] - INFO - Subscribed to olink/commands
+2026-03-03 06:37:17,642 - [BRIDGE] - INFO - Starting Context Publisher (Interval: 10 seconds)...
+2026-03-03 06:37:17,642 - [BRIDGE] - INFO - Starting Feedback Publisher (Interval: 60 seconds)...
+2026-03-03 06:37:17,644 - [BRIDGE] - INFO - Connected to Pong Relay! Listening for state and waiting for commands...
+2026-03-03 06:37:19,156 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:24,793 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:37:24,793 - [BRIDGE] - INFO - Received MQTT Command: '{"command": "pause_game"}'
+2026-03-03 06:37:24,793 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:37:24,793 - [BRIDGE] - INFO - Extracted command from JSON: 'pause_game'
+2026-03-03 06:37:24,793 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:37:27,646 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:29,162 - [BRIDGE] - INFO - Forwarded command to game: {'type': 'admin', 'command': 'pause_game'}
+2026-03-03 06:37:29,162 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:37,653 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:39,172 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:47,664 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.
+2026-03-03 06:37:49,178 - [BRIDGE] - WARNING - Context timer triggered, but no game state received yet.

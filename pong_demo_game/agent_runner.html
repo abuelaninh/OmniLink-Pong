@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Agent Runner</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #222;
+            color: #0f0;
+            padding: 20px;
+        }
+
+        #log {
+            border: 1px solid #444;
+            padding: 10px;
+            height: 300px;
+            overflow-y: scroll;
+            background: #000;
+        }
+
+        .status {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🤖 Pong Agent (HTTP Polling)</h1>
+    <div class="status">
+        Status: <span id="status">Initializing...</span><br>
+        Target: http://localhost:5000
+    </div>
+    <div id="log"></div>
+
+    <script>
+        // --- Agent Logic (Transpiled from agent_tool.ts) ---
+        const API_URL = "http://localhost:5000";
+        const POLL_INTERVAL_MS = 100; // 100ms Polling
+        const logDiv = document.getElementById('log');
+        const statusSpan = document.getElementById('status');
+
+        function log(msg) {
+            const line = document.createElement('div');
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logDiv.appendChild(line);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        async function agentLoop() {
+            try {
+                statusSpan.textContent = "Polling Proxy...";
+
+                // 1. GET State
+                const response = await fetch(`${API_URL}/data`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const wrapper = await response.json();
+
+                if (wrapper.command === "ACTIVATE") {
+                    statusSpan.textContent = "Active - Playing Game";
+                    const gameState = JSON.parse(wrapper.payload);
+
+                    // 2. Decide Move
+                    const paddleHeight = 80;
+                    const paddleCenter = gameState.leftPaddleY + (paddleHeight / 2);
+                    const ballY = gameState.ball.y;
+                    const tolerance = 10;
+
+                    let move = "STOP";
+                    if (paddleCenter < ballY - tolerance) {
+                        move = "DOWN";
+                    } else if (paddleCenter > ballY + tolerance) {
+                        move = "UP";
+                    }
+
+                    // 3. POST Action (Only if moving to save bandwidth/logs)
+                    if (move !== "STOP") {
+                        // log(`Ball: ${Math.round(ballY)} | Pad: ${Math.round(paddleCenter)} -> ${move}`);
+
+                        await fetch(`${API_URL}/callback`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                                action: move,
+                                version: wrapper.version,
+                                timestamp: new Date().toISOString()
+                            })
+                        });
+                    }
+                } else {
+                    statusSpan.textContent = "Idle - Waiting for Game Connection";
+                }
+
+            } catch (error) {
+                statusSpan.textContent = `Error: ${error.message}`;
+                // console.error(error); // Keep console cleanish
+            }
+        }
+
+        // Start
+        log("Agent started. Polling every " + POLL_INTERVAL_MS + "ms");
+        setInterval(agentLoop, POLL_INTERVAL_MS);
+    </script>
+</body>
+
+</html>
